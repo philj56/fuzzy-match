@@ -12,8 +12,10 @@ Improvements over the original version:
 - No need for a forced recursion limit, so this version will always find the
   optimal match (although you may run out of stack space if you try to match a
   5000+ character long search pattern).
+- Performance is possibly ever so slightly better (anecdotally, matching "LLL"
+  against a list of 355,000 english words takes 26-33ms, versus 33-35ms for the
+  original version).
 - [C, glorious C](https://www.youtube.com/watch?v=tas0O586t80).
-
 
 ## Testing
 
