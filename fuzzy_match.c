@@ -134,10 +134,12 @@ int32_t compute_score(int32_t jump, bool first_char, const char *restrict match)
 		score += adjacency_bonus;
 	}
 	if (!first_char || jump > 0) {
-		if (isupper(*match) && islower(*(match - 1))) {
+		if (isupper((unsigned char)*match)
+				&& islower((unsigned char)*(match - 1))) {
 			score += camel_bonus;
 		}
-		if (isalnum(*match) && !isalnum(*(match - 1))) {
+		if (isalnum((unsigned char)*match)
+				&& !isalnum((unsigned char)*(match - 1))) {
 			score += separator_bonus;
 		}
 	}
