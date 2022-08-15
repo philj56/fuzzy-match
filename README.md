@@ -17,6 +17,10 @@ Improvements over the original version:
   original version).
 - [C, glorious C](https://www.youtube.com/watch?v=tas0O586t80).
 
+If you want to learn more, there's much more documentation and a collection of
+ports of the algorithm (including this one) to different languages at
+https://github.com/tajmone/fuzzy-search.
+
 ## Testing
 
 The file [`main.c`](main.c) contains a simple utility to read newline-separated
